@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello World</title>
+	<link rel="stylesheet" href="HelloAI.css">
+	<script src="HelloAI.js" defer></script>
+</head>
+<body>
+	<main class="hello-card">
+		<p class="eyebrow">A tiny welcome</p>
+		<h1>Hello, world!</h1>
+		<p class="intro">Tell me your name and I will say hello.</p>
+
+		<form id="name-form">
+			<label for="fname">Your name</label>
+			<div class="input-row">
+				<input type="text" id="fname" name="fname" autocomplete="name" required>
+				<button type="submit">Say hello</button>
+			</div>
+		</form>
+
+		<p id="greeting" class="greeting" aria-live="polite"></p>
+	</main>
+</body>
+</html>
