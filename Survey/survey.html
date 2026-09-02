@@ -10,20 +10,20 @@
     <div class='survey-container'>
         <h1>Favorite Cat Breed Survey</h1>
 
-        <form class='survey-form'>
+        <form class='survey-form' onsubmit="return alert('Thank you for participating!')">
             <div class='form-group'>
                 <label for='fname'>First Name:</label>
-                <input type='text' id='fname' name='fname' placeholder='Enter your first name'>
+                <input type='text' id='fname' name='fname' placeholder='Enter your first name' required>
             </div>
 
             <div class='form-group'>
                 <label for='lname'>Last Name:</label>
-                <input type='text' id='lname' name='lname' placeholder='Enter your last name'>
+                <input type='text' id='lname' name='lname' placeholder='Enter your last name' required>
             </div>
 
             <div class='form-group'>
                 <label for='breed'>Favorite cat breed:</label>
-                <select id='breed' name='breed'>
+                <select id='breed' name='breed' required>
                     <option value=''>-- Select a breed --</option>
                     <option value='siamese'>Siamese</option>
                     <option value='maine-coon'>Maine Coon</option>
@@ -58,7 +58,7 @@
             </div>
 
             <div class='button-row'>
-                <button type='button' onclick="alert('Thank you for participating!')">Click Me!</button>
+                <button type='submit'>Click Me!</button>
             </div>
         </form>
     </div>
