@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Favorite Cat Breed Survey</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <div class='survey-container'>
+        <h1>Favorite Cat Breed Survey</h1>
+
+        <form class='survey-form'>
+            <div class='form-group'>
+                <label for='fname'>First Name:</label>
+                <input type='text' id='fname' name='fname' placeholder='Enter your first name'>
+            </div>
+
+            <div class='form-group'>
+                <label for='lname'>Last Name:</label>
+                <input type='text' id='lname' name='lname' placeholder='Enter your last name'>
+            </div>
+
+            <div class='form-group'>
+                <label for='breed'>Favorite cat breed:</label>
+                <select id='breed' name='breed'>
+                    <option value=''>-- Select a breed --</option>
+                    <option value='siamese'>Siamese</option>
+                    <option value='maine-coon'>Maine Coon</option>
+                    <option value='persian'>Persian</option>
+                    <option value='ragdoll'>Ragdoll</option>
+                    <option value='bengal'>Bengal</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Which activity do you enjoy most with cats?</legend>
+
+                <label><input type='radio' name='activity' value='playing'> Playing</label>
+                <label><input type='radio' name='activity' value='petting'> Petting</label>
+                <label><input type='radio' name='activity' value='watching'> Watching them nap</label>
+                <label><input type='radio' name='activity' value='training'> Training them</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which cat traits do you like most?</legend>
+
+                <label><input type='checkbox' name='trait' value='friendly'> Friendly</label>
+                <label><input type='checkbox' name='trait' value='playful'> Playful</label>
+                <label><input type='checkbox' name='trait' value='calm'> Calm</label>
+                <label><input type='checkbox' name='trait' value='smart'> Intelligent</label>
+                <label><input type='checkbox' name='trait' value='fluffy'> Fluffy</label>
+            </fieldset>
+
+            <div class='form-group'>
+                <label for='comments'>Tell us more about your favorite cat breed:</label>
+                <textarea id='comments' name='comments' placeholder='I love this breed because...'></textarea>
+            </div>
+
+            <div class='button-row'>
+                <button type='button' onclick="alert('Thank you for participating!')">Click Me!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
