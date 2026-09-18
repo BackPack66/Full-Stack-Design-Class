@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #f4f0e8;
+	color: #183c3a;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 130px;
+	border-bottom: 2px solid #183c3a;
+}
+
+h1,
+h2 {
+	margin: 0 0 20px;
+}
+
+h1 {
+	color: #d95f4a;
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+/* The middle of the page has two flexbox sections. */
+.middle {
+	display: flex;
+	gap: 25px;
+	max-width: 1100px;
+	margin: 35px auto;
+	padding: 0 20px;
+}
+
+.top-loafers,
+.sources {
+	flex: 1;
+	padding: 25px;
+	border: 1px solid #c8d0c5;
+	background: white;
+}
+
+.cat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+	border-top: 1px solid #c8d0c5;
+}
+
+.cat strong {
+	font-size: 18px;
+}
+
+.cat img {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+}
+
+.sources {
+	background: #e5eee4;
+}
+
+.sources a {
+	display: block;
+	margin: 22px 0;
+	color: #d95f4a;
+	font-size: 18px;
+}
+
+/* The bottom bar has the visit information and address side by side. */
+footer {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	max-width: 1100px;
+	min-height: 200px;
+	margin: 0 auto;
+	padding: 25px 20px;
+	border-top: 2px solid #183c3a;
+}
+
+footer div,
+footer address {
+	flex: 1;
+}
+
+footer img {
+	width: 130px;
+	height: 100px;
+	margin-top: 10px;
+	object-fit: cover;
+}
+
+address {
+	font-style: normal;
+	line-height: 1.8;
+}
+
+address a {
+	color: #d95f4a;
+}
+
+@media (max-width: 700px) {
+	.middle,
+	footer {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	footer {
+		gap: 20px;
+	}
+}

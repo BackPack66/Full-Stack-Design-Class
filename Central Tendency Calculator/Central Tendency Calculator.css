@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.calculator {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* Main flexbox layout */
+.myflexboxRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Three sections across the page */
+.myflexboxColumn {
+    flex: 33.33%;
+    padding: 20px;
+    min-width: 250px;
+}
+
+/* Form styling */
+.formRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.formRow label {
+    width: 180px;
+    font-size: 14px;
+}
+
+.formRow input {
+    width: 120px;
+    padding: 4px;
+}
+
+.numberInput {
+    margin-top: 18px;
+}
+
+.numberInput input {
+    width: 120px;
+}
+
+/* Buttons */
+button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.clearButton {
+    margin-top: 35px;
+}
+
+/* Number list */
+.numberList {
+    min-height: 100px;
+    padding: 5px;
+}
+
+.numberItem {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+/* Results */
+.results {
+    font-size: 16px;
+}
+
+.results p {
+    margin: 0 0 12px 0;
+}
+
+.results span {
+    margin-left: 5px;
+}
+
+/* Messages */
+.message {
+    min-height: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .myflexboxRow {
+        flex-direction: column;
+    }
+
+    .myflexboxColumn {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    h1 {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+
+    .formRow {
+        flex-wrap: wrap;
+    }
+
+    .formRow label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .numberInput {
+        align-items: flex-start;
+    }
+}

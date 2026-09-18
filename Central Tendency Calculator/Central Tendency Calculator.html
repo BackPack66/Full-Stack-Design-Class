@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Central Tendency Calculator</title>
+
+    <link rel="stylesheet" href="Central Tendency Calculator.css">
+    <script src="Central Tendency Calculator.js" defer></script>
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <h1>Central Tendency Calculator</h1>
+
+        <div class="myflexboxRow">
+
+            <!-- LEFT COLUMN -->
+            <section class="myflexboxColumn">
+
+                <h2>(1) Enter the range of the numbers</h2>
+                <h2>(2) Enter your numbers</h2>
+
+                <form name="myForm">
+
+                    <div class="formRow">
+                        <label for="minimum">Minimum value of numbers:</label>
+                        <input type="number" id="minimum" name="minimum">
+                    </div>
+
+                    <div class="formRow">
+                        <label for="maximum">Maximum value of numbers:</label>
+                        <input type="number" id="maximum" name="maximum">
+                    </div>
+
+                    <div class="formRow numberInput">
+                        <label for="newNumber">Enter a number:</label>
+                        <input type="number" id="newNumber" name="newNumber">
+                        <button type="button" onclick="addNumber()">
+                            Include
+                        </button>
+                    </div>
+
+                </form>
+
+                <p id="message" class="message" aria-live="polite"></p>
+
+                <button type="button" class="clearButton" onclick="clearEverything()">
+                    Clear everything
+                </button>
+
+            </section>
+
+
+            <!-- MIDDLE COLUMN -->
+            <section class="myflexboxColumn">
+
+                <h2>Numbers entered so far:</h2>
+
+                <div id="numberList" class="numberList" aria-live="polite">
+                    <p>No numbers entered yet.</p>
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT COLUMN -->
+            <section class="myflexboxColumn">
+
+                <h2>Central tendencies</h2>
+
+                <div class="results">
+
+                    <p>
+                        <strong>Mean:</strong>
+                        <span id="mean">n/a</span>
+                    </p>
+
+                    <p>
+                        <strong>Median:</strong>
+                        <span id="median">n/a</span>
+                    </p>
+
+                    <p>
+                        <strong>Mode(s):</strong>
+                        <span id="mode">n/a</span>
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
