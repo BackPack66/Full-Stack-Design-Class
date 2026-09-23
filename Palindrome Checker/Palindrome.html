@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="Palindrome.css">
+</head>
+
+<body>
+    <h1>Palindrome Checker</h1>
+
+    <main>
+        <section class="form-section">
+            <h2>Check if a word is a palindrome</h2>
+
+            <form id="palindromeForm">
+                <label for="word">Word to check:</label>
+                <input type="text" id="word" name="word">
+
+                <label for="algorithm">Algorithm to use (1 or 2):</label>
+                <input
+                    type="number"
+                    id="algorithm"
+                    name="algorithm"
+                    min="1"
+                    max="2"
+                >
+
+                <button type="submit">Check and add to list</button>
+
+                <p id="errorMessage"></p>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <h2>Algorithm 1</h2>
+            <h3>Word: palindrome?</h3>
+
+            <ul id="algorithm1List"></ul>
+
+            <button type="button" id="clear1">Clear the list</button>
+        </section>
+
+        <section class="result-section">
+            <h2>Algorithm 2</h2>
+            <h3>Word: palindrome?</h3>
+
+            <ul id="algorithm2List"></ul>
+
+            <button type="button" id="clear2">Clear the list</button>
+        </section>
+    </main>
+
+    <script src="Palindrome.js" defer></script>
+</body>
+
+</html>
